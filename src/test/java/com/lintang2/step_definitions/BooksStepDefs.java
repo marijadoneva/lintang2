@@ -1,7 +1,7 @@
 package com.lintang2.step_definitions;
 
 import com.lintang2.pages.BookPage;
-import com.lintang2.pages.DashboardPage;
+import com.lintang2.pages.DashBoardPage;
 import com.lintang2.utilities.BrowserUtil;
 import com.lintang2.utilities.DB_Util;
 import io.cucumber.java.en.Then;
@@ -18,7 +18,7 @@ public class BooksStepDefs {
 
     @When("the user navigates to {string} page")
     public void the_user_navigates_to_page(String moduleName) {
-        new DashboardPage().navigateModule(moduleName);
+        new DashBoardPage().navigateModule(moduleName);
 
 
     }
