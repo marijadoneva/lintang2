@@ -1,6 +1,7 @@
 package com.lintang2.step_definitions;
 
 import com.lintang2.utilities.ConfigurationReader;
+import com.lintang2.utilities.DB_Util;
 import com.lintang2.utilities.Driver;
 import io.cucumber.java.Scenario;
 import org.junit.After;
@@ -32,6 +33,17 @@ public class Hooks {
         }
 
         Driver.closeDriver();
+    }
 
+    @io.cucumber.java.Before("@db")
+    public void setupDB(){
+        System.out.println("Connecting to database...");
+        DB_Util.createConnection();
+    }
+
+    @io.cucumber.java.After("@db")
+    public void closeDB(){
+        System.out.println("Closing DB connection...");
+        DB_Util.destroy();
     }
 }
