@@ -3,9 +3,9 @@ package com.lintang2.step_definitions;
 import com.lintang2.utilities.ConfigurationReader;
 import com.lintang2.utilities.DB_Util;
 import com.lintang2.utilities.Driver;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import org.junit.After;
-import org.junit.Before;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -33,6 +33,7 @@ public class Hooks {
         }
 
         Driver.closeDriver();
+
     }
 
     @io.cucumber.java.Before("@db")
