@@ -1,4 +1,4 @@
-package com.lintang2.runners;
+package com.lintang2DBAutomation.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;

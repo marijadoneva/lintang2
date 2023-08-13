@@ -1,4 +1,4 @@
-package com.lintang2.utilities;
+package com.lintang2DBAutomation.utilities;
 
 import java.sql.*;
 import java.util.ArrayList;

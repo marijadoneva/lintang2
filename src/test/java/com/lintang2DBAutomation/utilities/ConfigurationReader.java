@@ -1,4 +1,4 @@
-package com.lintang2.utilities;
+package com.lintang2DBAutomation.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;

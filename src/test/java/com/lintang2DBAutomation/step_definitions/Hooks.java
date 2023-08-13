@@ -1,8 +1,8 @@
-package com.lintang2.step_definitions;
+package com.lintang2DBAutomation.step_definitions;
 
-import com.lintang2.utilities.ConfigurationReader;
-import com.lintang2.utilities.DB_Util;
-import com.lintang2.utilities.Driver;
+import com.lintang2DBAutomation.utilities.ConfigurationReader;
+import com.lintang2DBAutomation.utilities.DB_Util;
+import com.lintang2DBAutomation.utilities.Driver;
 import io.cucumber.java.Scenario;
 import org.junit.After;
 import org.junit.Before;

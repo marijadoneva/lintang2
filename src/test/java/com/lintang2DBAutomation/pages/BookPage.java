@@ -1,6 +1,6 @@
-package com.lintang2.pages;
+package com.lintang2DBAutomation.pages;
 
-import com.lintang2.utilities.Driver;
+import com.lintang2DBAutomation.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

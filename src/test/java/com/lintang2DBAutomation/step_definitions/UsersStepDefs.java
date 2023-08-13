@@ -1,8 +1,8 @@
-package com.lintang2.step_definitions;
+package com.lintang2DBAutomation.step_definitions;
 
-import com.lintang2.pages.UsersPage;
-import com.lintang2.utilities.BrowserUtil;
-import com.lintang2.utilities.DB_Util;
+import com.lintang2DBAutomation.pages.UsersPage;
+import com.lintang2DBAutomation.utilities.BrowserUtil;
+import com.lintang2DBAutomation.utilities.DB_Util;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
