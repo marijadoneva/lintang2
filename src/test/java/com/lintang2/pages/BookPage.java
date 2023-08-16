@@ -55,6 +55,9 @@ public class BookPage extends BasePage{
     @FindBy(xpath = "//div[@class='toast-message']")
     public WebElement borrowBook;
 
+    @FindBy(id = "book_categories")
+    public WebElement bookCategoriesDropdown;
+
 
     public WebElement editBook(String book) {
         String xpath = "//td[3][.='" + book + "']/../td/a";
