@@ -35,9 +35,28 @@ public class BookPage extends BasePage{
     @FindBy(id = "description")
     public WebElement description;
 
+    @FindBy(xpath = "//a[.=' Add Book']")
+    public WebElement addBookButton;
+
+    @FindBy(id = "book_group_id")
+    public WebElement bookCategoriesDropdownNewBook;
+
+    @FindBy(id="borrowed_books")
+    public WebElement borrowedBooks;
+
+
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement saveButton;
+
+    @FindBy(xpath = "//div[@class='toast-message']")
+    public WebElement toastMsg;
+
+    @FindBy(xpath = "//div[@class='toast-message']")
+    public WebElement borrowBook;
+
     @FindBy(id = "book_categories")
     public WebElement bookCategoriesDropdown;
-
 
 
     public WebElement editBook(String book) {
