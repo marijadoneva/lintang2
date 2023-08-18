@@ -389,7 +389,12 @@ public class BrowserUtil {
 
         return getElementsText(select.getOptions());
     }
+    public static void selectOptionDropdown(WebElement element,String category){
 
+        Select select=new Select(element);
+
+        select.selectByVisibleText(category);
+    }
 
 
 }

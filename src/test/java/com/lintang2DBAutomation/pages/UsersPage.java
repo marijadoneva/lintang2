@@ -38,6 +38,18 @@ public class UsersPage extends BasePage {
         return Driver.getDriver().findElement(By.xpath(xpath));
     }
 
+    public String getUserCount(){
+        // Extract data
+        String allText = userCount.getText();
+        System.out.println(allText);
+
+        int start = allText.indexOf("of")+3;
+        int end = allText.indexOf("entries")-1;
+
+        // filter and replace
+        return allText.substring(start,end).replace(",","");
+
+    }
 
 
 }
